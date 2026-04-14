@@ -12,8 +12,10 @@ main{
 header {
     display: flex;
     justify-content: space-between;
-    height: 3.12rem;    
-    padding-top: 0.75rem; 
+    height: 3rem;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 99;
 }
 .section-1 {
     width: 100%;
@@ -24,6 +26,8 @@ header {
     width: 100%;
     height: 100%; 
     background-color: red;
+    position: relative;
+    z-index:11;
 }
 .section-3{
     width: 100%;
@@ -173,6 +177,93 @@ input[type="search"]:focus {
     border: none;
     background-color: transparent;
 }
+.hero-section-1{
+    position: relative;
+    z-index: 10;
+}
+.hero-container-1{
+    padding-top: 2rem;
+}
+.hero-container-1 h2{
+    font-family: 'Gilroy-bold', sans-serif;
+    color:#002a48;
+    font-size: 35px;
+    padding-left: 1rem;
+}
+.hero-container-1 h3{
+    font-family: 'Gilroy-regular', sans-serif;
+    color: #002a48;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+.hero-container-1 p{
+    font-family: 'Gilroy-regular', sans-serif;
+    color: #002a48;
+    font-size: 9px;
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+    line-height: 14px;
+}
+.hero-button{
+    display: flex;
+    justify-content: start;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    gap: 10px;
+}
+#view-intro-button{
+    background-color: #fceed5;
+    color: #002a48;
+    padding: 7px 26px;
+    font-family: 'Gilroy-regular', sans-serif;
+    font-size: 13px;
+    border-radius: 1.5rem;
+}
+#explore-now-button{
+    background-color: #002a48;
+    color: white;
+    padding: 7px 26px;
+    font-family: 'Gilroy-regular', sans-serif;
+    font-size: 13px;
+    border-radius: 1.5rem;
+}
+.hero-button img{
+    width: 15px;
+    height:15px;
+    position: relative;
+    top: 3px;
+}
+.hero-container-2 img{
+    width:15px;
+}
+.hero-image img{
+    width: 100%;
+    height:100%;
+    padding-top: 1rem;
+}
+.shape-1{
+    position: absolute;
+    width: 16rem;
+    height: 14rem;
+    background-color: #f7dba7;
+    z-index: 1;
+    top: -156px;
+    border-radius: 40px;
+    transform: rotate(24deg);
+}
+.shape-2{
+    position: absolute;
+    width: 16rem;
+    height: 14rem;
+    background-color: #f7dba7;
+    z-index: 1;
+    top: 0;
+    border-radius: 40px;
+    transform: rotate(24deg);
+}
+
+
 
 /* Media Queries */
 
