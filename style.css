@@ -34,7 +34,7 @@ header {
 .section-2 {
     width: 100%;
     height: 100%; 
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     position: relative;
     z-index:11;
 }
@@ -90,14 +90,13 @@ footer{
 header ul {
     display: none;
     padding-top: 0.56rem;
-    padding: 2%; 
 }
 
 header ul li {
     list-style-type: none;
     font-family: 'Gilroy-Medium', sans-serif;
     color: #003459;
-    padding: 0.56rem 0.31rem; 
+    padding: 0.5rem 1.7vw; 
     font-weight: 600;
     cursor: pointer;
 
@@ -105,13 +104,13 @@ header ul li {
 
 .search-container-section {
     display: none;
-    padding-top: 0.62rem; 
+    padding-top: 0.5rem; 
 }
 
 .search-container {
     width: 66%; 
-    height: 1.87rem;      
-    padding-top: 0.31rem; 
+    height: 2rem;      
+    padding-top: 0rem; 
     border-radius: 1.25rem; 
     background-color: white;
 }
@@ -127,10 +126,9 @@ header ul li {
     border: none;
     font-family: 'Gilroy-Regular', sans-serif;
     padding-left: 0.5rem;
-    padding-bottom: 0.31rem;
-    width: 72%;
-    position: relative;
-    bottom: 0.12rem; 
+    padding-top: 0.3rem;
+    width: 78%;
+    position: relative; 
 }
 input[type="search"]:focus {
     outline: none;
@@ -140,6 +138,7 @@ input[type="search"]:focus {
     display: none;
     padding-top: 1.25rem;  
     width: 16%;
+    border:none;
 
 }
 
@@ -150,6 +149,7 @@ input[type="search"]:focus {
     border-radius: 1.25rem;      
     font-family: 'Gilroy-Bold', sans-serif;
     cursor: pointer;
+    border:none;
 }
 
 .vnd-section {
@@ -412,7 +412,7 @@ input[type="search"]:focus {
         font-size: 24px;
     }
     .hero-content-container-1 p {
-        font-size: 10px;
+        font-size: 11px;
         line-height: 17px;
     }
     .hero-button{
@@ -616,11 +616,17 @@ input[type="search"]:focus {
     }
     .search-container-section{
         display: flex;
-        width: 18%;
+        width: 30%;
         padding-right: 2rem;
     }
     .search-container{
-        width: 100%;
+        width: 95%;
+        display: flex;
+    }
+    .search-container img {
+        width: 0.93rem;
+        height: 0.93rem;
+        padding-top: 0.6rem;
     }
     .hero-section-1 {
         display: flex;
@@ -725,8 +731,8 @@ input[type="search"]:focus {
         align-items: center;
         padding: 2rem 6%;
         height: auto;
-        padding-left: 3rem;
-
+        padding-left: 10%;
+        max-width: 1024px;
     }
     .monito-logo{
         padding-left: 0px;
@@ -762,7 +768,7 @@ input[type="search"]:focus {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 2rem; 
+        height: 2.5rem;
         background-color: white;
         border-radius: 2rem;
     }
@@ -776,14 +782,15 @@ input[type="search"]:focus {
         width: 20%;
     }
     .join-community-btn button {
-        padding: 0.5rem 0.6rem;
-        font-size: 0.7rem;
+        padding: 0.3333rem 0.6rem;
+        font-size: 0.8rem;
         border-radius: 3rem;
         width: 105%;
         box-sizing: border-box;
+        height: 2.5rem;
     }
     .vnd-section{
-        display: flex;
+        display: none;
         padding-right: 1rem;
         padding-top: 0rem;
         padding-left: 1rem;
@@ -992,6 +999,7 @@ input[type="search"]:focus {
     }
     .search-container-section{
         padding-top: 0rem;
+        padding-bottom: 1rem;
     }
     .search-container img {
         width: 1.06rem;
@@ -1009,7 +1017,7 @@ input[type="search"]:focus {
         width: 12.5rem;
         height: 2.8rem;
         padding-top: 0rem;
-        padding-bottom: 0px;
+        padding-bottom: 1rem;
     }
     .join-community-btn button{
         width: 12.5rem;
@@ -1020,7 +1028,8 @@ input[type="search"]:focus {
         display: flex;
         padding-right: 6.25rem;
         padding-left: 1.25rem;
-        padding-top: 0.5rem;
+        padding-top: 0rem;
+        padding-bottom: 1rem;
     }
     .hero-content-container-1 {
         padding-top: 0rem;
@@ -1173,6 +1182,9 @@ input[type="search"]:focus {
         padding-bottom: 2rem; 
         padding-top:0rem; 
     }
+    .hero-section-1{
+        padding-top: 7rem;
+    }
     .hero-content-container-1 {
         padding-top: 10rem;
     }
@@ -1199,6 +1211,7 @@ input[type="search"]:focus {
     .hero-image {
         position: relative;
         top: 3rem;
+        height: 1rem;
         
     }
     .hero-image img {
