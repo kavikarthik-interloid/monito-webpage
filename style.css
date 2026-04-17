@@ -33,10 +33,13 @@ header {
 }
 .section-2 {
     width: 100%;
-    height: 100%; 
-    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    background-color: rgb(250, 248, 248);
     position: relative;
-    z-index:11;
+    z-index: 11;
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+
 }
 .section-3{
     width: 100%;
@@ -378,6 +381,97 @@ input[type="search"]:focus {
     left: 16rem;
 }
 
+.section-2-titles{
+    display:flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.section-2-titles span{
+    color:black;
+    font-family: 'Gilroy-regular', sans-serif;
+    font-size: 0.8rem;
+}
+.section-2-titles p{
+    color:#002a48;
+    font-family: 'Gilroy-bold', sans-serif;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.section-2-button{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 90%;
+}
+.section-2-button button{
+    width: 100%;
+    padding: 0.5rem 6rem;
+    background-color: white;
+    color: #003459;
+    font-family: 'Gilroy-regular', sans-serif;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    border: 1px solid;
+}
+.section-2-button span{
+    font-weight: 600;
+    position: relative;
+    top: 4px;
+    font-size: 16px;
+    left: 3px;
+}
+.section-2-items-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 1rem;
+    gap: 0.5rem;
+
+}
+.item-container-1{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 12px;
+}
+.item-container-1 img{
+    width: 90%;
+    border-radius: 15px;
+    padding: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+.item-1-details{
+    padding-left: 0.6rem;
+}
+.item-1-details h4{
+    font-size: 0.7rem;
+    font-family: 'Gilroy-bold', sans-serif;
+    font-weight: 400;
+    line-height: 1rem;
+}
+.item-1-details p{
+    font-size: 0.65rem;
+    font-family: 'Gilroy-regular', sans-serif;
+    font-weight: 500;
+    color: #667479;
+    line-height: 1.1rem;
+}
+.item-1-details span{
+    font-weight: 800;
+}
+.item-1-details h3{
+    font-size: 0.78rem;
+    font-family: 'Gilroy-bold', sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+
+
+
+
+
+
 /* Media Queries */
 
 @media (min-width:320px){
@@ -431,7 +525,7 @@ input[type="search"]:focus {
     .hero-image img {
         width: 100%;
         max-width: 450px;
-        height: auto;   `
+        height: auto;   
     }
     .hero-shapes{
         top: 6.25rem;
@@ -467,63 +561,6 @@ input[type="search"]:focus {
         top: 9.8rem;
     }
 }
-/* @media(min-width:425px){
-    .section-1 {
-        height: 82.8%;
-    }
-    .hero-content-container-1 h2 {
-        font-size: 44px;
-    }
-    .hero-content-container-1 h3 {
-        font-size: 26px;
-    }
-    .hero-content-container-1 p {
-        font-size: 12px;
-        line-height: 18px;
-    }
-    .hero-button{
-        padding-left: 1rem;
-    }
-    #view-intro-button {
-        font-size: 16px;
-        padding: 10px 35px;
-    }
-    #explore-now-button{
-        font-size: 16px;
-        padding: 10px 35px;
-    }
-    .hero-image {
-        position: relative;
-    }
-    .shape-1 {
-        width: 19rem;
-    }
-    .shape-2{
-        width: 82%;
-        height: 75%;
-        left: 6.5rem;
-        bottom: -9rem;
-    }
-    .shape-3 {
-        left: 3.1rem;
-        transform: rotate(5deg);
-    }
-    .shape-4 {
-        right: 8.5rem;
-        top: 11.2rem;
-    }
-    .shape-5 {
-        right: 9rem;
-        top: 11.6rem;
-    }
-    .shape-6{
-        right: 4.9rem;
-        top: 10rem;
-        width: 0.9rem;
-        height: 0.9rem;
-    }
-
-} */
 @media (min-width:426px){
     .section-1 {
         height: 81%;
@@ -547,6 +584,9 @@ input[type="search"]:focus {
     }
     .hero-image img{
         padding-top: 3rem;
+    }
+    .item-container-1 img {
+        width: 91%;
     }
 }
 /* @media (min-width:500px){
@@ -599,16 +639,17 @@ input[type="search"]:focus {
 }
 @media (min-width: 768px){
     .section-1 {
-        height: 50%;
+        height: 59%;
     }
     header{
-        height: 6rem;
+        height: 10rem;
+        padding-top: 3rem;
     }
     header ul li {
-       padding: 0.5rem 1.1rem;
+       padding: 0.5rem 1rem;
     }
     .monito-logo{
-        padding-left: 2.2rem;
+        padding-left: 2rem;
 
     }
     .search-icon{
@@ -617,10 +658,10 @@ input[type="search"]:focus {
     .search-container-section{
         display: flex;
         width: 30%;
-        padding-right: 2rem;
+        padding-right: 1rem;
     }
     .search-container{
-        width: 95%;
+        width: 91%;
         display: flex;
     }
     .search-container img {
@@ -719,6 +760,37 @@ input[type="search"]:focus {
         bottom: 7rem;
         left: 3rem;
     }
+    .section-2{
+        padding-bottom: 0rem;
+    }
+    .section-2-items-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 3rem;
+        gap: 0.5rem;
+        padding-top: 1.5rem;
+    }
+    .section-2-content {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+    }
+    .section-2-button{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        text-align: center;
+    }
+    .section-2-button button {
+        width: 60%;
+        padding: 0.4rem 1rem;
+    }
+    .item-container-1 img {
+        width: 92%;
+    }
 }
 @media (min-width: 1024px) {
     .section-1 {
@@ -729,15 +801,14 @@ input[type="search"]:focus {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 6%;
+        padding: 2.5rem 3rem;
         height: auto;
-        padding-left: 10%;
-        max-width: 1024px;
+        padding-left: 9%;
+        max-width: 1050px;
     }
     .monito-logo{
         padding-left: 0px;
-        padding-right: 1rem;
-
+        padding-right: 4%;
     }
     .monito-logo img {
         width: 7.5rem; 
@@ -747,33 +818,32 @@ input[type="search"]:focus {
     header ul {
         display: flex;
         gap: 1.5rem; 
+        padding-left: 2%;
     }
     header ul li{
-        padding: 0px;
-        font-size: 14px;
+        font-size: 1rem;
+        padding: 0.5rem 0.3rem;
     }
     .search-container-section {
         width: 30%; 
-        min-width: 250px;
-        max-width: 400px;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: 0rem;
+        padding-left: 3%;
         padding-top: 0rem;
     }
     .search-container img{
         padding-bottom: 0.7rem;
+        padding-left: 0.8rem;
     }
-
     .search-container {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 91%;
         height: 2.5rem;
         background-color: white;
         border-radius: 2rem;
     }
     .search-container input{
-        width: 75%;
+        width: 84%;
         bottom: 0rem;
     }
     .join-community-btn{
@@ -782,12 +852,13 @@ input[type="search"]:focus {
         width: 20%;
     }
     .join-community-btn button {
-        padding: 0.3333rem 0.6rem;
-        font-size: 0.8rem;
+        padding: 0.2rem 0.1rem;
+        font-size: 0.9rem;
         border-radius: 3rem;
-        width: 105%;
+        width: 100%;
         box-sizing: border-box;
         height: 2.5rem;
+        padding-bottom: 0rem;
     }
     .vnd-section{
         display: none;
@@ -843,7 +914,7 @@ input[type="search"]:focus {
         padding: 10px 25px;
     }
     .shape-1{
-        width: 13rem;
+        width: 16rem;
         height: 16rem;
         border-radius: 60px;
     }
@@ -878,7 +949,7 @@ input[type="search"]:focus {
         display: none;
     }
     .shape-7{
-        bottom: 58%;
+        bottom: 56%;
         left: 8.2%
     }
     .shape-8{
@@ -891,6 +962,33 @@ input[type="search"]:focus {
     .shape-10{
         display: block;
         bottom: -13rem;
+    }
+    .section-2-items-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 4rem;
+        gap: 1rem;
+        padding-top: 1.5rem;
+    }
+    .section-2-content {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3.5rem;
+        padding-right: 2.5rem;
+    }
+    .section-2-titles span {
+        font-size: 1rem;
+    }
+    .section-2-titles p {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+    .section-2-titles {
+        line-height: 1.6rem;
+    }
+    .section-2-button {
+        top: 1rem;
     }
 }
 /* @media (min-width: 1100px){
@@ -970,9 +1068,10 @@ input[type="search"]:focus {
         justify-content: center;
         padding-top: 1.2rem;
         align-items: center;
-        padding: 2rem 10%;
+        padding: 2.5rem 10%;
         height: auto;
         padding-left: 10rem;
+        max-width:80%;
     }
     .monito-logo img{
         width: 8.1rem;
@@ -988,7 +1087,7 @@ input[type="search"]:focus {
         padding-right: 2.5rem;
     }
     header ul{
-        padding-top: 0.9rem;
+        padding-top: 0.5rem;
         padding-left: 2.25rem;
         Padding-right: 2.25rem;
         gap: 2.5rem;
@@ -999,7 +1098,7 @@ input[type="search"]:focus {
     }
     .search-container-section{
         padding-top: 0rem;
-        padding-bottom: 1rem;
+        padding-right: 1rem;
     }
     .search-container img {
         width: 1.06rem;
@@ -1017,11 +1116,10 @@ input[type="search"]:focus {
         width: 12.5rem;
         height: 2.8rem;
         padding-top: 0rem;
-        padding-bottom: 1rem;
     }
     .join-community-btn button{
         width: 12.5rem;
-        padding: 0.75rem 0.8rem;
+        padding: 0.6rem 0.8rem;
         font-size: 1.06rem;
     }
     .vnd-section{
@@ -1029,7 +1127,6 @@ input[type="search"]:focus {
         padding-right: 6.25rem;
         padding-left: 1.25rem;
         padding-top: 0rem;
-        padding-bottom: 1rem;
     }
     .hero-content-container-1 {
         padding-top: 0rem;
@@ -1113,6 +1210,33 @@ input[type="search"]:focus {
     .shape-10{
         bottom: -11rem;
     }
+    .section-2-content {
+        padding-left: 5.5rem;
+        padding-right: 4.5rem;
+    }
+    .section-2-items-container {
+        padding: 6rem;
+        padding-top: 2rem;
+    }
+    .section-2-titles span {
+        font-size: 1rem;
+    }
+    .section-2-titles p {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+    }
+    .section-2-titles {
+        line-height: 2rem;
+    }
+    .section-2-button {
+        width: 18%;
+        text-align: center;
+        top: 2rem;
+    }
+    .section-2-button button {
+        width: 65%;
+        padding: 0.8rem 0.1rem;
+    }
 
 
 }
@@ -1134,7 +1258,7 @@ input[type="search"]:focus {
     }
 
     header ul li {
-       font-size: 1.06rem;   
+       font-size: 1.15rem;   
     }
 
     .monito-logo {
@@ -1157,29 +1281,30 @@ input[type="search"]:focus {
     .search-container input{
         padding-top: 0rem;
         padding-bottom: 0.4rem;
+        font-size: 1rem;
     }
     .search-container-section {
-        width: 18%;
-        padding-bottom: 2rem; 
+        width: 18%; 
         padding-right: 0rem; 
+        padding-left:0;
     }
 
     .join-community-btn {
         width: 18.7rem;        
         height: 3.06rem;      
-        padding-bottom: 2rem;
         padding-left: 1rem; 
     }
 
     .join-community-btn button {
-        width: 18.75rem;        
-        padding: 0.87rem 0rem; 
-        font-size: 1.12rem;    
+        width: 18.75rem;
+        padding: 2rem 0rem;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+        padding-top: 1rem;   
     }
 
     .vnd-section {
         padding-left: 1.87rem;
-        padding-bottom: 2rem; 
         padding-top:0rem; 
     }
     .hero-section-1{
@@ -1236,7 +1361,7 @@ input[type="search"]:focus {
         border-radius: 57px;
     }
     .shape-2 {
-    width: 38%;
+        width: 38%;
         height: 88%;
         bottom: -13rem;
         left: 51%;
@@ -1255,7 +1380,7 @@ input[type="search"]:focus {
         top: 19.6rem;
     }
     .shape-7 {
-        bottom: 35rem;
+        bottom: 58%;
         left: 12.4rem;
         width: 4rem;
         height: 4rem;
@@ -1269,5 +1394,9 @@ input[type="search"]:focus {
         width: 30rem;
         height: 35rem;
         left: 15rem;
+    }
+    .section-2-items-container {
+        padding: 6rem;
+        padding-top: 3rem;
     }
 }
