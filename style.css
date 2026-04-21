@@ -275,12 +275,12 @@ input[type="search"]:focus {
 }
 .hero-image{
     position: relative;
+    top: 2rem;
 }
 .hero-image img {
     width: 100%;
     max-width: 500px;
     height: auto;
-    padding-top: 3rem;
 }
 .hero-shapes{
     position: absolute;
@@ -1010,6 +1010,7 @@ input::placeholder {
     font-family: 'Gilroy-regular', sans-serif;
     font-size: 0.7rem;
     color: #999;
+    font-weight: 500;
 }
 form button{
     width: 100%;
@@ -1215,6 +1216,13 @@ form button{
         padding-bottom: 1rem;
         text-align: center;
     }
+    .hero-content-container-1 {
+        text-align: center;
+    }
+    .hero-button {
+        display: flex;
+        justify-content: center;
+    }
 }
 @media (min-width:600px){
      .hero-content-container-1{
@@ -1239,7 +1247,7 @@ form button{
         height: 59%;
     }
     header{
-        height: 10rem;
+        height: 8rem;
         padding-top: 3rem;
     }
     header ul li {
@@ -1350,7 +1358,7 @@ form button{
     .shape-7{
         display:block;
         left: 3.5rem;
-        bottom: 15rem;
+        bottom: 17rem;
     }
     .shape-8{
         display: block;
@@ -1629,13 +1637,20 @@ form button{
     footer{
         padding: 1rem 3rem;
     }
+    .upper-footer {
+        width: 100%;
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+        box-sizing: border-box;
+    }
     .form-container{
         display: flex;
         width: 100%;
+        padding: 1.5rem;
     }
     .form-container h2 {
         text-align: start;
-        width: 40%;
+        width: 39%;
         position: relative;
         top: 0.5rem;
     }
@@ -1649,6 +1664,7 @@ form button{
     }
     form button {
         width: 50%;
+        font-size: 1rem;
     }
     .social-media-container {
         display: flex;
@@ -1664,17 +1680,21 @@ form button{
         padding-bottom: 1rem;
     }
     .lower-footer-container p {
-        order: 1; 
+        order: 1;
+        font-size: 0.7rem;
     }
     .lower-footer-container img {
         order: 2; 
         padding-bottom: 0rem;
+        width: 7rem;
+
     }
     .terms-and-policies-section{
         order: 3; 
     }
     .terms-and-policies-section span{
         padding-bottom: 0rem;
+        font-size: 0.7rem;
     }
 }
 @media (min-width: 1024px) {
@@ -1688,7 +1708,7 @@ form button{
         align-items: center;
         padding: 2.5rem 3rem;
         height: auto;
-        padding-left: 9%;
+        padding-left: 10%;
         max-width: 1050px;
     }
     .monito-logo{
@@ -1703,16 +1723,16 @@ form button{
     header ul {
         display: flex;
         gap: 1.5rem; 
-        padding-left: 2%;
+        padding-left: 1%;
     }
     header ul li{
         font-size: 1rem;
         padding: 0.5rem 0.3rem;
     }
     .search-container-section {
-        width: 30%; 
+        width: 35%; 
         padding-right: 0rem;
-        padding-left: 3%;
+        padding-left: 1%;
         padding-top: 0rem;
     }
     .search-container img{
@@ -1734,7 +1754,7 @@ form button{
     .join-community-btn{
         display: flex;
         padding-top: 0rem;
-        width: 20%;
+        width: 25%;
     }
     .join-community-btn button {
         padding: 0.2rem 0.1rem;
@@ -2023,6 +2043,47 @@ form button{
         padding-top: 1.5rem;
         padding-bottom: 0rem;
     }
+    footer {
+        padding: 1rem 4rem;
+    }
+    .upper-footer {
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    .form-container {
+        display: flex;
+        width: 100%;
+        padding: 2.5rem;
+    }
+    .form-container h2 {
+        text-align: start;
+        width: 40%;
+        position: relative;
+        top: 0.5rem;
+        font-size: 1.2rem;
+        left: 0.5rem;
+    }
+    .navigations {
+        display: flex;
+        gap: 2.5rem;
+        font-family: 'Gilroy-regular', sans-serif;
+        padding-top: 2rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .lower-footer-container p {
+        font-size: 0.8rem;
+    }
+    .terms-and-policies-section span {
+        font-size: 0.8rem;
+    }
+    input::placeholder {
+        font-family: 'Gilroy-regular', sans-serif;
+        font-size: 0.9rem;
+        color: #999;
+    }
+    
 }
 @media (min-width:1440px){
     .section-1 {
@@ -2452,6 +2513,34 @@ form button{
     .item-details-3 p {
         font-size: 0.7rem;
     }
+    footer {
+        padding: 1rem 6rem;
+    }
+    .upper-footer {
+        width: 100%;
+        padding-top: 3.5rem;
+        padding-bottom: 2rem;
+    }
+    .form-container {
+        display: flex;
+        width: 100%;
+        padding: 2.5rem;
+    }
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+    form button {
+        width: 50%;
+        font-size: 1.1rem;
+    }
+    .terms-and-policies-section span {
+        font-size: 0.9rem;
+    }
+    .lower-footer-container p {
+        font-size: 0.9rem;
+    }
+
+
 }
 @media (min-width: 1920px) { 
     .section-1 {
@@ -2742,5 +2831,22 @@ form button{
         width: 50%;
         position: relative;
         top: 0.2rem;
+    }
+    footer {
+        padding: 0rem 6rem;
+    }
+    .terms-and-policies-section span {
+        font-size: 1rem;
+    }
+    .lower-footer-container p {
+        font-size: 1rem;
+    }
+    .upper-footer {
+        width: 100%;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
     }
 }
