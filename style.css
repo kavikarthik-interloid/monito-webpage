@@ -1417,8 +1417,9 @@ form button{
         text-align: center;
     }
     .section-2-button button {
-        width: 60%;
-        padding: 0.4rem 1rem;
+        width: 70%;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.8rem;
     }
     .section-3{
         padding-left: 4rem;
@@ -1438,7 +1439,7 @@ form button{
         height: 48rem;
         background-color: #fceed5;
         z-index: 1;
-        left: 25rem;
+        left: 24rem;
         bottom: -4.5rem;
         border-radius: 60px;
         transform: rotate(30deg);
@@ -1497,7 +1498,7 @@ form button{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         padding: 3rem;
-        gap: 0.5rem;
+        gap: 0.7rem;
         padding-top: 1.5rem;
     }
     .section-4-button {
@@ -1508,8 +1509,9 @@ form button{
         text-align: center;
     }
     .section-4-button button {
-        width: 60%;
-        padding: 0.4rem 1rem;
+        width: 70%;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.8rem;
     }
     .section-4-content {
         display: flex;
@@ -1655,14 +1657,15 @@ form button{
         text-align: center;
     }
     .section-6-button button {
-        width: 60%;
-        padding: 0.4rem 1rem;
+        width: 70%;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.8rem;
     }
     .section-6-items-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 3rem;
-        gap: 0.5rem;
+        gap: 0.7rem;
         padding-top: 1.5rem;
         padding-bottom: 0rem;
     }
@@ -1703,6 +1706,7 @@ form button{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding-top: 0.5rem;
     }
     .lower-footer-container {
         display: flex;
@@ -1740,7 +1744,7 @@ form button{
         align-items: center;
         padding: 2.5rem 3rem;
         height: auto;
-        padding-left: 10%;
+        padding-left: 9%;
         max-width: 1050px;
     }
     .monito-logo{
@@ -2561,6 +2565,7 @@ form button{
     }
     .item-details-3 span {
         font-size: 0.7rem;
+        padding: 5px 9px;
     }
     .item-details-3 h4 {
         font-size: 0.9rem;
