@@ -875,13 +875,13 @@ input[type="search"]:focus {
     position: relative;
 }
 .shape-14{
-position: absolute;
+    position: absolute;
     width: 60rem;
     height: 45rem;
     background-color: #fceed5;
     z-index: -1;
-    right: -4rem;
-    bottom: 14.5rem;
+    right: -4.5rem;
+    bottom: 13.5rem;
     border-radius: 2.5rem;
     transform: rotate(10deg);
 } 
@@ -1121,9 +1121,6 @@ form button{
     header{
         height: 3.5rem;
     }
-    .hero-content-container-1 h2 {
-        font-size: 40px;
-    }
     .hero-content-container-1 h3 {
         font-size: 24px;
     }
@@ -1187,12 +1184,6 @@ form button{
     }
 }
 @media (min-width: 425px){
-    .hero-content h2 {
-        font-size: 29px;
-    }
-    .hero-content h3 {
-        font-size: 20px;
-    }
     .hero-content p {
         font-size: 0.8rem;
     }
@@ -1208,15 +1199,12 @@ form button{
     .menu-bar{
         display: none;
     }
+
     header ul{
         display: flex;
     }
     .monito-logo{
         padding-left: 0.75rem;
-    }
-    .search-icon {
-        padding-top: 1.12rem;
-        padding-right: 1.56rem;
     }
     .hero-content p {
         font-size: 0.8rem;
@@ -1224,7 +1212,7 @@ form button{
         padding-top: 1rem;
     }
     .hero-image img{
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
     .hero-content-2 p{
         padding-right: 1rem;
@@ -1315,7 +1303,7 @@ form button{
        padding-top: 0rem; 
     }
     .hero-content-container-1 h2 {
-        font-size: 38px;
+        font-size: 1.7rem;
         padding-left: 4.5rem;
     }
     .hero-content-container-1 h3 {
@@ -2123,6 +2111,11 @@ form button{
     }
     
 }
+@media (min-width:1300px){
+    .vnd-section{
+        display: flex;
+    }
+}
 @media (min-width:1440px){
     .section-1 {
         height: 70%;
@@ -2564,7 +2557,7 @@ form button{
         padding-top: 0.5rem;
     }
     .item-details-3 span {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 5px 9px;
     }
     .item-details-3 h4 {
