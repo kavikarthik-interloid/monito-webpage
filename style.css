@@ -39,7 +39,7 @@ header {
     position: relative;
     z-index: 11;
     padding-top: 2rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 3rem;
 
 }
 .section-3{
@@ -54,7 +54,7 @@ header {
     height: fit-content;
     background-color: rgb(250, 248, 248);
     position: relative;
-    padding-bottom: 3.5rem;
+    padding-bottom: 3rem;
 }
 .section-5{
     width: 100%;
@@ -71,7 +71,7 @@ header {
     height: fit-content;
     background-color: rgb(250, 248, 248);
     padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3.5rem;
     position: relative;
 }
 footer{
@@ -416,9 +416,11 @@ input[type="search"]:focus {
 }
 .section-2-button{
     position: absolute;
-    bottom: 1rem;
-    left: 0.5rem;
-    width: 95%;
+    bottom: 0rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
 }
 .section-2-button button{
     width: 100%;
@@ -610,9 +612,11 @@ input[type="search"]:focus {
 }
 .section-4-button{
     position: absolute;
-    bottom: 1rem;
-    left: 0.5rem;
-    width: 95%;
+    bottom: 0rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
 }
 .section-4-button button{
     width: 100%;
@@ -905,9 +909,12 @@ position: absolute;
 }
 .section-6-button{
     position: absolute;
-    bottom: 1rem;
-    left: 0.5rem;
-    width: 95%;
+    bottom: 0rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
 }
 .section-6-button button{
     width: 100%;
