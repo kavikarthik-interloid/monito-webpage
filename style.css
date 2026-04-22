@@ -252,6 +252,7 @@ input[type="search"]:focus {
     font-size: 13px;
     border-radius: 1.5rem;
     border: 1px solid #002a48;
+    cursor: pointer;
 }
 #explore-now-button{
     background-color: #002a48;
@@ -262,6 +263,7 @@ input[type="search"]:focus {
     font-size: 13px;
     border-radius: 1.5rem;
     border: none;
+    cursor: pointer;
 }
 .hero-button img{
     width: 15px;
@@ -434,6 +436,7 @@ input[type="search"]:focus {
     font-size: 0.9rem;
     border-radius: 30px;
     border: 1px solid;
+    cursor: pointer;
 }
 .section-2-button span{
     font-weight: 600;
@@ -563,6 +566,7 @@ input[type="search"]:focus {
     font-size: 0.8rem;
     border-radius: 1.5rem;
     border: 1px solid #002a48;
+    cursor: pointer;
 }
 #explore-now-button-2{
     background-color: #002a48;
@@ -573,6 +577,8 @@ input[type="search"]:focus {
     font-size: 0.8rem;
     border-radius: 1.5rem;
     border: none;
+    cursor: pointer;
+
 }
 .shape-11{
     position: absolute;
@@ -631,6 +637,7 @@ input[type="search"]:focus {
     font-size: 0.9rem;
     border-radius: 30px;
     border: 1px solid;
+    cursor: pointer;
 }
 .section-4-button span{
     font-weight: 600;
@@ -652,6 +659,8 @@ input[type="search"]:focus {
     border-radius: 12px;
     position: relative;
     padding: 0.5rem;
+    padding-bottom: 50px;
+
 }
 .item-container-2 img{
     width: 100%;
@@ -683,13 +692,16 @@ input[type="search"]:focus {
     font-weight: 400;
     line-height: 1.8rem;
 }
-.gift-container{
+.gift-container {
     display: flex;
     width: 95%;
     height: 10%;
     background-color: #fcefd7;
     border-radius: 5px;
     align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
 }
 .gift-container img {
     width: 10%;
@@ -731,6 +743,7 @@ input[type="search"]:focus {
     font-size: 0.9rem;
     border-radius: 30px;
     border: 1px solid;
+    cursor: pointer;
 }
 .section-5-button span{
     font-weight: 600;
@@ -851,6 +864,7 @@ input[type="search"]:focus {
     font-size: 0.7rem;
     border-radius: 1.5rem;
     border: 1px solid #002a48;
+    cursor: pointer;
 }
 #explore-now-button-3{
     background-color: #002a48;
@@ -861,6 +875,7 @@ input[type="search"]:focus {
     font-size: 0.7rem;
     border-radius: 1.5rem;
     border: none;
+    cursor: pointer;
 }
 .section-5-main-image{
     display: flex;
@@ -1034,6 +1049,7 @@ form button{
     background-color: #003459;
     color: white;
     font-family: 'Gilroy-regular', sans-serif;
+    cursor: pointer;
 }
 .social-media-container{
     display: flex;
